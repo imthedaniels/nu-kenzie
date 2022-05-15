@@ -1,0 +1,57 @@
+#dashboard {
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+}
+
+#descAndTotal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #descAndTotal {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #dashboard {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  #dashboard {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-device-width: 1440px) and (max-device-width: 1440px) {
+  #dashboard {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-device-width: 2560px) {
+  #dashboard {
+    width: 40vw;
+  }
+}

@@ -1,0 +1,228 @@
+form {
+  width: 363px;
+  height: 295px;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+form label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #212529;
+}
+
+#priceAndTypeLbl {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#priceAndTypeData {
+  display: flex;
+  justify-content: space-between;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+}
+
+#inputDescription {
+  height: 40px;
+  background: #f8f9fa;
+  border: 2px solid #868e96;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 8px;
+
+  color: #000000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#inputDescription::placeholder {
+  color: #868e96;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+#spanExample {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #868e96;
+}
+
+#inputPrice {
+  width: 128px;
+  height: 40px;
+  background: #f8f9fa;
+  border: 2px solid #868e96;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 8px;
+
+  color: #000000;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+
+  position: relative;
+  -webkit-appearance: none;
+}
+
+#inputPrice::-webkit-outer-spin-button,
+#inputPrice::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#price label {
+  position: relative;
+}
+
+#price label span {
+  font-size: 14px;
+  position: absolute;
+  top: -4px;
+  left: 100px;
+  z-index: 1;
+  color: #868e96;
+}
+
+#btnValue {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  width: 100%;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+#selectType {
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
+  border: 2px solid #868e96;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 8px;
+  color: #868e96;
+}
+
+#lblType {
+  width: 45%;
+}
+
+@media screen and (max-width: 1024px) {
+  form {
+    width: 275px;
+    height: 275px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin: 25px auto 20px auto;
+    box-sizing: border-box;
+  }
+
+  #description {
+    height: 80px;
+  }
+
+  #lblType {
+    width: 144px;
+  }
+
+  #priceAndTypeData {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #priceAndTypeLbl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  #selectType {
+    width: 140px;
+    height: 40px;
+    background: #f8f9fa;
+    border: 2px solid #868e96;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 8px;
+    color: #868e96;
+  }
+
+  #price label span {
+    font-size: 12px;
+    position: absolute;
+    top: -3px;
+    left: 49px;
+    z-index: 1;
+    color: #868e96;
+  }
+
+  #btnValue {
+    margin-top: 22px;
+  }
+
+  #inputPrice {
+    width: 70px;
+    height: 40px;
+    background: #f8f9fa;
+    border: 2px solid #868e96;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 8px;
+
+    color: #000000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+
+    position: relative;
+    -webkit-appearance: none;
+  }
+}

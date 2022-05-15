@@ -1,0 +1,126 @@
+#fundo {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
+}
+
+#title {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+#description {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#btnHome {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 241px;
+  height: 48px;
+  margin-top: 15px;
+
+  cursor: pointer;
+}
+
+#btnHome:hover {
+  filter: brightness(0.8);
+}
+
+#mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#mainContainer__Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  height: 500px;
+  align-items: flex-start;
+  margin-left: 100px;
+
+  color: #ffffff;
+}
+
+#mainContainer__logo-light {
+  width: 150px;
+}
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
+.previewAppImg {
+  width: 80%;
+}
+
+#containerImg {
+  width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+  #title {
+    margin-bottom: 10px;
+  }
+
+  #mainContainer {
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #mainContainer__Info img {
+    margin: 0 auto;
+  }
+
+  #mainContainer__Info {
+    margin: 15px auto;
+    width: 80%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .previewAppImg {
+    display: none;
+  }
+
+  #containerImg {
+    display: flex;
+    justify-content: center;
+  }
+
+  #btnHome {
+    margin: 0 auto;
+  }
+
+  #description {
+    display: flex;
+    flex-direction: column;
+    height: 13px;
+  }
+}

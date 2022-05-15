@@ -1,0 +1,93 @@
+#card {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  height: 87px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.card-income {
+  background-image: url(../../img/income-card.png);
+  background-repeat: no-repeat;
+}
+
+.card-expense {
+  background-image: url(../../img/expense-card.png);
+  background-repeat: no-repeat;
+}
+
+#card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  padding-left: 15px;
+}
+
+#card div h1 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #212529;
+  width: 150px;
+}
+
+#card div span {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.typeSpan {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #868e96;
+  padding-left: 15px;
+}
+
+.trashIcon {
+  background-color: #e9ecef;
+  color: #868e96;
+  width: auto;
+  height: 2em;
+  margin-right: 1em;
+  border-style: none;
+  padding-top: 4px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  #card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 87px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  #card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding-left: 15px;
+  }
+
+  .typeSpan {
+    align-self: flex-start;
+  }
+
+  #card div h1 {
+    text-align: left;
+  }
+}
